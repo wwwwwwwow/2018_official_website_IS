@@ -1,0 +1,147 @@
+.bg-canvas {
+ 
+        width: var(--quote-box-spacing);
+        height: var(--quote-box-spacing);
+        /*background: rgba(100, 100, 100, .3);*/
+        transform-origin: 0 0;
+        transform: rotate(-45deg) scale(1) ;
+        color: var(--main-text-color-a);
+        font-family: 'Source Code Pro', monospace;
+        font-size: 12px;
+        pointer-events: none;
+        position: relative;
+        /*z-index: 0;*/
+    
+    }
+
+    .quote-box {
+        width: var(--quote-box-size);
+        height: var(--quote-box-size);
+        position: absolute;
+    }
+
+    .quote-right-box {
+        transform: rotate(90deg);
+        right: -160px;
+        /*width*/
+        top: var(--quote-box-spacing);
+    }
+
+    .quote-left-box {}
+
+    .quote {
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+    }
+
+    .quote-right {
+        width: 100%;
+        height: 100%;
+        /*opacity: .8;*/
+
+    }
+
+    .quote-left {
+        width: 800px;
+        height: 100%;
+        /*opacity: .6;*/
+    }
+
+    .code1 {
+        width: 100%;
+        height: var(--quote-box-width);
+        overflow: hidden;
+    }
+
+    .code2 {
+        position: absolute;
+        right: 0;
+        width: var(--quote-box-width);
+        overflow: hidden;
+        padding: 3px 0;
+        
+    }
+
+
+    .hljs-meta,
+    .hljs-tag {
+        color: var(--hint-text-color);
+    }
+
+    .hljs-keyword,
+    .hljs-attribute,
+    .hljs-selector-tag,
+    .hljs-meta-keyword,
+    .hljs-doctag,
+    .hljs-name,
+    .hljs-attr {
+        font-weight: bold;
+        color: var(--main-text-color-a);
+    }
+
+    .hljs-type,
+    .hljs-string,
+    .hljs-number,
+    .hljs-selector-id,
+    .hljs-selector-class,
+    .hljs-quote,
+    .hljs-template-tag,
+    .hljs-deletion {
+        color: var(--primary-text-color-a);
+    }
+
+    .hljs-title,
+    .hljs-section {
+        color: var(--primary-text-color-a);
+        font-weight: bold
+    }
+
+    .quote-left td,
+    .quote-right span {
+        cursor: pointer;
+        transition: all .4s;
+        pointer-events: auto;
+        
+        /*word-break: break-all;*/
+    }
+
+    .quote-left .stock td{
+        padding-right: 4px;
+        text-align: right;
+    }
+
+    .bg-canvas .quote-left:hover td {
+        will-change: color;
+        will-change: transform;
+    }
+
+    .bg-canvas .quote-right:hover span {
+        will-change: color;
+        
+    }
+
+    .quote-left td:hover {
+        color: var(--primary-text-color);
+        transform: translateY(-3px);
+        text-shadow: 0  0px 6px rgba(225, 56, 89, 1);
+        
+    
+    }
+
+    .quote-right span:hover {
+        color: var(--accent-text-color);
+        text-shadow: 0  0px 6px rgba(225, 56, 89, .6);
+        
+        
+    }
+
+    .quote-left .price-up {
+        color: var(--accent-text-color);
+    }
+
+    .quote-left .price-down {
+        color: #92318b;
+    }

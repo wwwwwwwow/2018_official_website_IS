@@ -1,0 +1,305 @@
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.fixed-top {
+    transform: translateZ(200px);
+    width: 100vw;
+    padding: 0;
+}
+.wrapper {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+
+
+
+/**{outline: 1px solid #999}*/
+
+.slogan {
+    margin-bottom: 1rem;
+    /*text-shadow: 0  3px 0px rgba(225, 56, 89, .8);*/
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+.slogan:hover {
+    transform: translateY(-3px);
+    text-shadow: 0 3px 4px rgba(163, 163, 173, 0.8);
+}
+
+section.logo {
+    margin-top: 3.5rem;
+    padding-top: 12vh;
+}
+
+main h1,
+main p,
+main button {
+    position: relative;
+}
+
+main {
+    margin-top: 10vh;
+    height: 65vh;
+}
+
+section.bg {
+    /*position: absolute;*/
+    width: 100%;
+}
+
+
+
+
+section.bg .bg-mask {
+    width: 200vw;
+
+    height: 100vh;
+
+
+    overflow: hidden;
+    transform: translateY(-42vh);
+}
+
+.bg-mask-item {
+    position: absolute;
+    transform: translateY(40vh);
+}
+
+section.bg .container .bg-canvas {
+    position: absolute;
+}
+
+section.logo img {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+.bg-grandient45deg {
+    background: rgba(225, 56, 89, 1);
+    background: -moz-linear-gradient(-45deg, rgba(225, 56, 89, 1) 0%, rgba(195, 43, 127, 1) 35%, rgba(146, 49, 140, 1) 65%, rgba(78, 56, 130, 1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(225, 56, 89, 1)), color-stop(35%, rgba(195, 43, 127, 1)), color-stop(65%, rgba(146, 49, 140, 1)), color-stop(100%, rgba(78, 56, 130, 1)));
+    background: -webkit-linear-gradient(-45deg, rgba(225, 56, 89, 1) 0%, rgba(195, 43, 127, 1) 35%, rgba(146, 49, 140, 1) 65%, rgba(78, 56, 130, 1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(225, 56, 89, 1) 0%, rgba(195, 43, 127, 1) 35%, rgba(146, 49, 140, 1) 65%, rgba(78, 56, 130, 1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(225, 56, 89, 1) 0%, rgba(195, 43, 127, 1) 35%, rgba(146, 49, 140, 1) 65%, rgba(78, 56, 130, 1) 100%);
+    background: linear-gradient(135deg, rgba(225, 56, 89, 1) 0%, rgba(195, 43, 127, 1) 35%, rgba(146, 49, 140, 1) 65%, rgba(78, 56, 130, 1) 100%);
+}
+
+.bg .gradient-rect {
+
+    /*opacity: .4;*/
+    width: 200vw;
+    height: 15vh;
+    position: absolute;
+    top: 50vh;
+}
+
+.rect-item {
+    opacity: .3;
+    width: 200vw;
+    height: 15vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.bg .gradient-rect:after,
+.bg .gradient-rect:before {
+    content: "";
+    width: 200vw;
+    height: 15vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(225, 56, 89, 1);
+    background: -moz-linear-gradient(-45deg, rgba(225, 56, 89, 1) 0%, rgba(195, 43, 127, 1) 35%, rgba(146, 49, 140, 1) 65%, rgba(78, 56, 130, 1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(225, 56, 89, 1)), color-stop(35%, rgba(195, 43, 127, 1)), color-stop(65%, rgba(146, 49, 140, 1)), color-stop(100%, rgba(78, 56, 130, 1)));
+    background: -webkit-linear-gradient(-45deg, rgba(225, 56, 89, 1) 0%, rgba(195, 43, 127, 1) 35%, rgba(146, 49, 140, 1) 65%, rgba(78, 56, 130, 1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(225, 56, 89, 1) 0%, rgba(195, 43, 127, 1) 35%, rgba(146, 49, 140, 1) 65%, rgba(78, 56, 130, 1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(225, 56, 89, 1) 0%, rgba(195, 43, 127, 1) 35%, rgba(146, 49, 140, 1) 65%, rgba(78, 56, 130, 1) 100%);
+    background: linear-gradient(135deg, rgba(225, 56, 89, 1) 0%, rgba(195, 43, 127, 1) 35%, rgba(146, 49, 140, 1) 65%, rgba(78, 56, 130, 1) 100%);
+}
+
+.bg .gradient-rect:after {
+    transform: translate(50px, -20px);
+    z-index: 0;
+    opacity: .2;
+}
+
+.bg .gradient-rect:before {
+    transform: translate(-50px, 20px);
+    z-index: -2;
+    opacity: .4;
+}
+
+section.major {
+    /*height: 100vh;*/
+    padding-top: 10vh;
+}
+
+
+section.major .row .title-product {
+    padding: 0;
+}
+
+section.major .slash {
+    width: 3px;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    right: 0;
+    background: rgba(225, 56, 89, 1);
+    margin-right: 10px;
+    transform: skewX(-10deg);
+}
+
+.card-box {
+    transform-style: preserve-3d;
+}
+
+.card-tilt {
+    transform: translateZ(20px)
+}
+
+.card-box:nth-child(odd) .card {
+    transform: translate(5%, 0) skew(-10deg) scaleX(1.2);
+}
+
+.card-box:nth-child(even) .card {
+    transform: translate(0, 20%) skew(-10deg) scaleX(1.2);
+}
+
+.tilt-box {
+    position: absolute;
+    width: 40vw;
+    height: 40vh;
+}
+
+.tilt-box {
+    transform-style: preserve-3d;
+}
+
+.tilt-item {
+    transform: translateZ(20px);
+}
+
+.card .card-content {
+    padding: 10%;
+    transform: scaleX(0.83) skew(10deg);
+}
+
+.card .card-content img {
+    padding: 40px 25% 10px;
+}
+
+
+
+
+
+
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+
+@media (max-width: 575.98px) {
+    main {
+        margin-top: 20vh;
+        height: 70vh;
+    }
+    .card:before,
+    .card:after {
+
+        /*transform: skew(-10deg) scaleX(.8);*/
+    }
+
+
+    section.major .row.product {
+        padding: 0 10%;
+    }
+}
+
+
+
+
+
+/*// Small devices (landscape phones, less than 768px)*/
+
+@media (max-width: 767.98px) {
+    html {
+        font-size: 12px;
+    }
+    main {
+        margin-top: 5vh;
+    }
+    .bg-mask {
+        opacity: .3;
+    }
+    .bg .gradient-rect {
+        transform: translate(75px, 60px) skewX(-45deg) scale(.6);
+    }
+    section.logo {
+
+        padding-top: 5vh;
+    }
+
+    section.bg .bg-mask {
+
+        transform: translate(-10vw, -30vh) scale(.9);
+    }
+    section.major .slash {
+        width: 0;
+    }
+    section.major .row.product .card {
+        margin: : 0 5%;
+    }
+    .card .card-content {
+        padding: 0 0 1rem;
+    }
+}
+
+
+
+
+
+/*// Medium devices (tablets, less than 992px)*/
+
+@media (max-width: 991.98px) {
+    .card:nth-child(1) {
+        transform: translate(5%, -10%) skew(-10deg) scaleX(1.1);
+    }
+    .card:nth-child(2) {
+        transform: translate(0, 10%) skew(-10deg) scaleX(1.1);
+    }
+}
+
+
+
+
+
+/*// Large devices (desktops, less than 1200px)*/
+
+@media (max-width: 1199.98px) {
+    .tilt-box {
+        transform-style: flat;
+    }
+
+    .tilt-item {
+        transform: translateZ(20px);
+    }
+}
+
+
+
+
+
+/*// Extra large devices (large desktops)*/
+
+
+/*// No media query since the extra-large breakpoint has no upper bound on its width*/
